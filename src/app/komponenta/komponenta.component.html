@@ -1,8 +1,8 @@
-<div class="div container">
+<section id="sekce">
 <div class="row">
-  <div class="col-md-4 col-md-offset-4">
+  <div class="d-inline mx-auto">
       <ul class="list-group">
-          <li class="list-group-item" *ngFor="let hero of heros" [ngClass]="{'text-danger': hero === 'Roža'}">{{ hero | accentize}}</li>
+          <li class="list-group-item" *ngFor="let hero of heros" [ngClass]="{'text-danger': hero === 'test'}">{{ hero | accentize}}</li>
           <li class="list-group-item">
               <button class="btn btn-info" (click)="addMore()">Zobrazit více</button>
           </li>
@@ -15,5 +15,5 @@
         </ul>
   </div>
 </div>
-</div>
+</section>
 
